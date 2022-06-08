@@ -1,0 +1,97 @@
+#guess {
+  position: relative;
+  display: inline-block;
+  width: 75%;
+}
+#submit {
+  display: inline-block;
+  position: relative;
+  width: 20%;
+}
+
+.autocomplete-item {
+  position: absolute;
+  border-bottom: none;
+  border-top: none;
+  z-index: 2;
+  width: 100%;
+  background: lightgray;
+  border: 1px solid slategray;
+  border-radius: 5%;
+}
+
+.autocomplete-item:hover {
+  background: slategray;
+  cursor: pointer;
+  color: white;
+}
+
+#autocomplete {
+  position: absolute;
+  width: 70%;
+  top: 70%;
+  left: 15%;
+}
+
+#quote {
+  background: black;
+  color: white;
+  position: absolute;
+  width: 67%;
+  height: 30%;
+  left: 15%;
+  top: 10%;
+  text-align: center;
+  padding-top: 10%;
+  border: 2px solid white;
+  font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  background: #202024;
+}
+
+#winner-modal {
+  position: absolute;
+  z-index: 3;
+  background: #202024;
+  color: white;
+  width: 50%;
+  height: 50%;
+  border: 2px solid white;
+  display: none;
+  left: 25%;
+  top: 25%;
+  text-align: center;
+  overflow: hidden;
+}
+
+#incorrect {
+  position: absolute;
+  top: 80%;
+  width: 68%;
+  left: 15%;
+  
+}
+
+#incorrect > p {
+  border: 1px solid red;
+  color: red;
+}
+
+#close {
+  position: absolute;
+  color: red;
+  left: 90%;
+  top: 2%;
+}
+
+#close:hover {
+  cursor: pointer;
+}
+
+.bar {
+  background: green;
+  width: 10%;
+  display: none;
+}
